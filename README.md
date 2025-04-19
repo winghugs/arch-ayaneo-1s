@@ -4,11 +4,11 @@ INCOMPLETE - still working on stuff, just taking notes here
 
 - Downgrade bluez to 5.68 if you want bluetooth controllers to connect properly
 - From https://github.com/chimeraos/device-quirks:
-    firmware from /usr/lib/firmware/edid/
-    air service file for audio fox
+  - firmware from /usr/lib/firmware/edid/
+  - air service file for audio fox
 - From https://github.com/steamfork/distribution
-    linux patches
-    linux-firmware
+  - linux patches
+  - linux-firmware
 - Install DeckyPlumber `curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh`
 - Install SimpleDeckyTDP `curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh`
 - Add to /etc/modprobe.d/audio.conf `options snd_hda_intel power_save=0 power_save_controller=N` - eliminates popping sound when speakers turn on. Put it to 1 and Y if you want slightly better battery.
