@@ -27,6 +27,7 @@ After Arch installer:
 * Edit /etc/systemd/logind.conf. Uncomment and change HandlePowerOff to `HandlePowerOff=suspend`
 
 Extra Info:
+arch-deckify: `curl -sSL https://raw.githubusercontent.com/unlbslk/arch-deckify/refs/heads/main/install.sh > deckify_install.sh && bash deckify_install.sh; rm -rf deckify_install.sh`
 DeckyLoader: `curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh`
 DeckyPlumber: `curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh`
 SimpleDeckyTDP: `curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh`
