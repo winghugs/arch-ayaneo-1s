@@ -2,6 +2,28 @@
 
 INCOMPLETE - still working on stuff, just taking notes here
 
+Arch Installer:
+* Best effort partition scheme works, I use 
+* Enable Multilib
+* Use GRUB
+* Enable Bluetooth
+* Enable Pipewire Audio
+* Use Desktop setup with desktop of choice, but use SDDM as greeter.
+
+After Arch installer:
+* Create a mountpoint for the SD card on the filesystem and add it to fstab.
+ * Add nofail to the SD card entry
+* Run scripts (arch-deckify, sdgyrodsu (optional), deckyloader, deckyplumber, simpledeckytdp)
+* Move the correct firmware into /usr/lib/firmware. The AUR package firmware no longer works, need the firmware from SteamFork or this repo.
+* Install and use ChimeraOS linux kernel
+* (optional) Add capability map to flip ayaneo button and start
+* Add brightness udev rule
+* Install packages
+* (optional) Add audio modprobe rule to prevent popping
+
+
+***** OLD ******
+
 - Downgrade bluez to 5.68 if you want bluetooth controllers to connect properly
 - From https://github.com/chimeraos/device-quirks:
   - firmware from /usr/lib/firmware/edid/
