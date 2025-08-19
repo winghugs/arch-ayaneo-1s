@@ -27,10 +27,9 @@ After Arch installer:
 * Edit /etc/systemd/logind.conf. Uncomment and change HandlePowerOff to `HandlePowerOff=suspend`
 
 Extra Info:
-arch-deckify: `curl -sSL https://raw.githubusercontent.com/unlbslk/arch-deckify/refs/heads/main/install.sh > deckify_install.sh && bash deckify_install.sh; rm -rf deckify_install.sh`
-DeckyLoader: `curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh`
-DeckyPlumber: `curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh`
-SimpleDeckyTDP: `curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh`
-
-Brightness - to /etc/udev/rules.d/99-brightness.rules: `ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"`
-Audio Popping - to /etc/modprobe.d/audio.conf: `options snd_hda_intel power_save=0 power_save_controller=N`
+* arch-deckify: `curl -sSL https://raw.githubusercontent.com/unlbslk/arch-deckify/refs/heads/main/install.sh > deckify_install.sh && bash deckify_install.sh; rm -rf deckify_install.sh` 
+* DeckyLoader: `curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh` 
+* DeckyPlumber: `curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh` 
+* SimpleDeckyTDP: `curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh` 
+* Brightness - to /etc/udev/rules.d/99-brightness.rules: `ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"`
+* Audio Popping - to /etc/modprobe.d/audio.conf: `options snd_hda_intel power_save=0 power_save_controller=N`
