@@ -11,7 +11,7 @@
 * Use Desktop setup with desktop of choice, but use SDDM as greeter.
 
 ### Scripted Install
-One liner to get everything set up, read everything that is prompted: `curl -sSL https://raw.githubusercontent.com/winghugs/arch-ayaneo-1s/refs/heads/main/bootstrap.sh > bootstrap.sh && bash bootstrap.sh; rm -rf deckify_install.sh`
+One liner to get everything set up, read everything that is prompted: `curl -sSL https://raw.githubusercontent.com/winghugs/arch-ayaneo-1s/refs/heads/main/bootstrap.sh > bootstrap.sh && bash bootstrap.sh; rm -rf bootstrap.sh`
 
 ### Manual install steps
 ### After Arch installer:
