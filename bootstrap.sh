@@ -2,12 +2,10 @@
 #REPOSITORY AT: https://github.com/winghugs/arch-ayaneo-1s
 
 #shouldn't run as sudo
-function sudocheck {
- if [ $(id -u) -eq 0 ]
-   then echo "Please do not run this script with sudo or as root, run as your user account."
-   exit
- fi
-}
+if [ $(id -u) -eq 0 ]
+  then echo "Please do not run this script with sudo or as root, run as your user account."
+  exit
+fi
 
 #initial warnings
 clear
@@ -25,14 +23,13 @@ echo "Firmware: aw87xxx_acf (older version)"
 echo "Custom: Arch-Deckify, DeckyLoader, DeckyPlumber, SimpleDeckyTDP, linux-chimeraos"
 echo "-----"
 echo "Type 'confirm' and press enter to continue, or anything else to exit"
-read confirm
-function confirmcheck {
- if [ $confirm -ne "confirm" ]
-   then
+read confirmchoice
+
+if [[ "$confirmchoice" != "confirm" ]];
+   then echo "Exiting..."
    exit
- fi
-}
-confirmcheck
+fi
+
 clear
 
 #go to home directory
