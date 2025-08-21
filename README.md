@@ -1,17 +1,19 @@
 # arch-ayaneo-1s
 
-INCOMPLETE - still working on stuff, just taking notes here
-
 Arch Installer:
 * Immediately type `dmesg -n 1` to kill the error messages
 * If you need wifi - `iwctl` and then `station wlan0 connect <SSID` - CTRL+D to get out after connected
 * Best effort partition scheme works, I use ext4
 * Enable Multilib
-* Use GRUB
+* Use whatever bootloader you want, but know how to switch to a new kernel if you're not using systemd-boot.
 * Enable Bluetooth
 * Enable Pipewire Audio
 * Use Desktop setup with desktop of choice, but use SDDM as greeter.
 
+---- Scripted -----
+One liner to get everything set up, read everything that is prompted: `curl -L https://github.com/winghugs/arch-ayaneo-1s/raw/main/install.sh | sh`
+
+---- Manually -----
 After Arch installer:
 * Create a mountpoint for the SD card on the filesystem and add it to fstab. Add nofail to the SD card entry
 * Run scripts (arch-deckify, sdgyrodsu (optional), deckyloader, deckyplumber, simpledeckytdp)
