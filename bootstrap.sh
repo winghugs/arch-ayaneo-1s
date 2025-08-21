@@ -25,7 +25,8 @@ echo "-----"
 echo "Type 'confirm' and press enter to continue, or anything else to exit"
 read confirm
 if [ $confirm -ne "confirm" ]
-  then exit
+  then
+  exit
 fi
 clear
 
