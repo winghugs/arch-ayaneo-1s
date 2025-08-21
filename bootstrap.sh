@@ -9,6 +9,7 @@ fi
 
 #initial warnings
 clear
+sleep 3
 echo "-----READ THIS-----"
 echo "This script is interactive and will ask for information occassionally. Please stick around during the install for the occassional password input or choice. Please also read the notes at the end to complete installation. This is not intended to be a one and done solution, only to simplify the process for those with an already passing familiarity with Arch."
 echo "This script also assumes you are running a fresh install of Arch, with the desktop of your choice installed as well as SDDM for the greeter. This script will install SDDM, but if another greeter was installed, you will need to manually swap it over."
