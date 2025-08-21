@@ -1,6 +1,6 @@
 # arch-ayaneo-1s
 
-Arch Installer:
+### Arch Installer:
 * Immediately type `dmesg -n 1` to kill the error messages
 * If you need wifi - `iwctl` and then `station wlan0 connect <SSID` - CTRL+D to get out after connected
 * Best effort partition scheme works, I use ext4
@@ -10,11 +10,11 @@ Arch Installer:
 * Enable Pipewire Audio
 * Use Desktop setup with desktop of choice, but use SDDM as greeter.
 
----- Scripted -----
+### Scripted Install
 One liner to get everything set up, read everything that is prompted: `curl -L https://github.com/winghugs/arch-ayaneo-1s/raw/main/install.sh | sh`
 
----- Manually -----
-After Arch installer:
+### Manual install steps
+### After Arch installer:
 * Create a mountpoint for the SD card on the filesystem and add it to fstab. Add nofail to the SD card entry
 * Run scripts (arch-deckify, sdgyrodsu (optional), deckyloader, deckyplumber, simpledeckytdp)
 * Enable inputplumber
@@ -28,7 +28,7 @@ After Arch installer:
 * Change GRUB entry to use ChimeraOS
 * Edit /etc/systemd/logind.conf. Uncomment and change HandlePowerOff to `HandlePowerOff=suspend`
 
-Extra Info:
+### Extra Info:
 * arch-deckify: `curl -sSL https://raw.githubusercontent.com/unlbslk/arch-deckify/refs/heads/main/install.sh > deckify_install.sh && bash deckify_install.sh; rm -rf deckify_install.sh` 
 * DeckyLoader: `curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh` 
 * DeckyPlumber: `curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh` 
