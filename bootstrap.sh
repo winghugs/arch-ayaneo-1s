@@ -22,8 +22,11 @@ echo "AUR: ayaneo-platform-dkms-git, ryzenadj"
 echo "Firmware: aw87xxx_acf (older version)"
 echo "Custom: Arch-Deckify, DeckyLoader, DeckyPlumber, SimpleDeckyTDP, linux-chimeraos"
 echo "-----"
-echo "Press any key to continue, or CTRL+C to exit"
-read -n 1
+echo "Type 'confirm' and press enter to continue, or anything else to exit"
+read confirm
+if [ $confirm -ne "confirm" ]
+  then exit
+fi
 clear
 
 #go to home directory
@@ -84,6 +87,6 @@ echo "Run 'uname -r' after boot to ensure that the kernel is running. It should 
 echo "You may need to run the DeckyLoader install again if it doesn't show up. You can find a one liner to install it both on this repo's github and the DeckyLoader github"
 echo "Please launch the new game mode icon to switch into gaming mode. You will need to ensure your console is not plugged into an external display for switching."
 echo "-----"
-echo ""
-read -n 1
+echo "Press enter to exit."
+read end
 exit
