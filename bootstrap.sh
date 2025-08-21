@@ -2,14 +2,16 @@
 #REPOSITORY AT: https://github.com/winghugs/arch-ayaneo-1s
 
 #shouldn't run as sudo
-if [ $(id -u) -eq 0 ]
-  then echo "Please do not run this script with sudo or as root, run as your user account."
-  exit
-fi
+function sudocheck {
+ if [ $(id -u) -eq 0 ]
+   then echo "Please do not run this script with sudo or as root, run as your user account."
+   exit
+ fi
+}
 
 #initial warnings
 clear
-sleep 3
+sleep 1
 echo "-----READ THIS-----"
 echo "This script is interactive and will ask for information occassionally. Please stick around during the install for the occassional password input or choice. Please also read the notes at the end to complete installation. This is not intended to be a one and done solution, only to simplify the process for those with an already passing familiarity with Arch."
 echo "This script also assumes you are running a fresh install of Arch, with the desktop of your choice installed as well as SDDM for the greeter. This script will install SDDM, but if another greeter was installed, you will need to manually swap it over."
@@ -24,10 +26,13 @@ echo "Custom: Arch-Deckify, DeckyLoader, DeckyPlumber, SimpleDeckyTDP, linux-chi
 echo "-----"
 echo "Type 'confirm' and press enter to continue, or anything else to exit"
 read confirm
-if [ $confirm -ne "confirm" ]
-  then
-  exit
-fi
+function confirmcheck {
+ if [ $confirm -ne "confirm" ]
+   then
+   exit
+ fi
+}
+confirmcheck
 clear
 
 #go to home directory
