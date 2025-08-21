@@ -11,7 +11,7 @@
 * Use Desktop setup with desktop of choice, but use SDDM as greeter.
 
 ### Scripted Install
-One liner to get everything set up, read everything that is prompted: `curl -L https://github.com/winghugs/arch-ayaneo-1s/raw/main/install.sh | sh`
+One liner to get everything set up, read everything that is prompted: `curl -L https://github.com/winghugs/arch-ayaneo-1s/raw/main/bootstrap.sh | sh`
 
 ### Manual install steps
 ### After Arch installer:
